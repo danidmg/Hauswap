@@ -1,0 +1,1314 @@
+body {
+  font-family: "Circular", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji",
+    "Segoe UI Symbol"; /* Familia de fuente */
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  line-height: 1.3; /* Altura de línea */
+  color: #484848; /* Color de texto */
+  font-weight: 600; /* Grosor de fuente */
+  margin-bottom: 10px; /* Agregar margen inferior */
+}
+h3 {
+  font-size: 22px; /* Tamaño de fuente */
+}
+
+h4 {
+  font-size: 20px; /* Tamaño de fuente */
+}
+
+h5 {
+  line-height: 0.7 !important;
+  color: #777777;
+  font-size: 16px;
+  margin-top: 10px;
+}
+
+p {
+  text-align: justify; /*Justificado*/
+  font-size: 16px; /* Tamaño de fuente */
+  line-height: 1.5; /* Altura de línea */
+  color: #484848; /* Color de texto */
+  font-weight: 400; /* Grosor de fuente */
+  margin-bottom: 10px;
+}
+
+a:link,
+a:visited,
+a:active,
+a:hover {
+  text-decoration: none; /*Quitar el subrayado de los enlaces*/
+  color: black; /*Color del enlace*/
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+
+article {
+  margin: 10px;
+  padding: 10px;
+  margin-bottom: 20px;
+}
+
+#contenedor {
+  width: 100%;
+  min-height: 100%;
+}
+
+/*FORMULARIO GENERAL*/
+form {
+  max-width: 1000px;
+  margin: 0 auto;
+  font-size: 20px;
+  background-color: #f2f2f2;
+  border-radius: 5px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+/*FORMULARIO PUBLICAR CASA Y EDITAR*/
+.form-marco {
+  background-color: #fff;
+  box-shadow: 0px 0px 30px rgba(181, 97, 36, 0.1);
+  border: 3px solid #fbc485;
+}
+
+legend {
+  margin-top: 20px; /* ESTO SOLO SALE EN FIREFOX ?????????????????????????? */
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+label {
+  display: block;
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+
+input[type="text"] {
+  width: 40%;
+  margin-bottom: 20px;
+  /* font-size: 18px; */
+}
+
+select {
+  width: 231px !important;
+  padding: 10px;
+  border-radius: 5px;
+  border: none;
+  margin-bottom: 20px;
+  font-size: 13px;
+}
+
+input[type="date"] {
+  width: 95%;
+}
+
+input[type="submit"] {
+  background-color: #986327;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+input[type="submit"]:hover {
+  background-color: #5b3d1a;
+}
+
+button[name="delete"]:hover {
+  background-color: #ff0000; /* establece el color de fondo a rojo cuando se pasa por encima*/
+}
+
+/* BUSCAR */
+
+#termino {
+  height: 30px;
+  border-radius: 5px;
+}
+
+#termino::placeholder {
+  font-size: 16px;
+}
+
+#buscar {
+  /* es un formulario, cambiar valores */
+  width: 500px;
+  background-color: #ffffff;
+  box-shadow: 0px 0px 0px rgba(0, 0, 0, 0);
+  text-align: center;
+  border: 0px solid rgb(255, 255, 255);
+}
+
+/* LOGIN Y REGISTRO*/
+#login,
+#registro {
+  width: 35%;
+  height: 50%;
+  padding: 16px;
+  border-radius: 10px;
+  margin: auto;
+  margin-top: 35px;
+  background-color: rgb(249, 218, 181);
+}
+
+input[type="password"],
+input[type="text"],
+input[type="tel"],
+input[type="date"],
+select {
+  width: 210px;
+  padding: 3px 10px;
+  border: 1px solid #f6f6f6;
+  border-radius: 3px;
+  background-color: #f6f6f6;
+  margin: 8px 0;
+  display: inline-block;
+  transition: 0.4s;
+  align-self: center;
+}
+
+fieldset {
+  border: none;
+}
+
+.button {
+  height: 34px;
+  width: 100%;
+  font-size: 15px;
+  color: rgb(99, 60, 15);
+  border: #000;
+  text-align: center;
+  border-width: 0;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+#login-button,
+#register-button,
+#login2-button,
+#register2-button {
+  background-color: #f8a647;
+}
+
+#login2-button:hover,
+#register2-button:hover,
+#login-button:hover,
+#register-button:hover {
+  background-color: #ff9114;
+}
+
+/* CABECERA Y MENU */
+#menu-div,
+#cabecera {
+  background-color: #fbc485;
+}
+
+#menu-div {
+  height: fit-content;
+  width: 240px;
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: 30px;
+  z-index: 4;
+  border-radius: 10px;
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.08);
+  font-size: 21px;
+  font-weight: bold;
+  font-family: "Circular", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji",
+    "Segoe UI Symbol"; /* Familia de fuente */
+}
+
+#cabecera {
+  height: 80px;
+  width: 100%;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
+  border-bottom: #fff;
+  padding: 0%;
+}
+
+#logo-cabecera {
+  margin-left: 5px;
+  position: absolute;
+}
+
+#nombre-cabecera {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#menu-cabecera {
+  position: absolute;
+  top: 0;
+  right: 0;
+  margin: 2px 10px 0 0;
+  width: 70px;
+  height: 70px;
+  background-color: transparent;
+  border-color: transparent;
+  z-index: 4;
+}
+
+#boton-menu-cabecera {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+/* PIE */
+#pie {
+  background-color: #fbc485;
+  height: 50px;
+  width: 100%;
+  text-align: center;
+  justify-content: center;
+  display: flex;
+  bottom: 0px;
+}
+
+/* IMAGENES */
+#imagenes-pagina {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+
+#imagenes-pagina-index {
+  object-fit: cover;
+  width: 100%;
+  height: 400px;
+}
+
+/* DIVS */
+#estructura-divs {
+  /* width: 500px;
+    height: 400px;  */
+  display: flex;
+  /* justify-content: center;
+    align-items: center;  */
+}
+
+#fotos-div {
+  width: 700px;
+  height: 400px;
+}
+
+/*MI CUENTA*/
+button {
+  background-color: #986327; /* color de fondo */
+  border: none; /* borde */
+  color: white; /* color de texto */
+  padding: 10px 20px; /* espacio interno */
+  text-align: center; /* alinear texto */
+  text-decoration: none; /* quitar subrayado */
+  display: inline-block; /* mostrar en línea */
+  font-size: 16px; /* tamaño de fuente */
+  margin: 10px 5px; /* margen */
+  cursor: pointer; /* cursor */
+  border-radius: 5px; /* borde redondeado */
+}
+
+button:hover {
+  background-color: #5b3d1a;
+}
+
+#div-datos {
+  background-color: #fff;
+  border: 1px solid #ebebeb;
+  border-radius: 8px;
+  box-shadow: 0px 0px 16px rgba(0, 0, 0, 0.08);
+  color: #484848;
+  padding: 16px;
+  margin: 16px 0px;
+  font-size: 16px; /* Tamaño de fuente */
+  line-height: 1.5; /* Altura de línea */
+  color: #484848; /* Color de texto */
+  font-weight: 400; /* Grosor de fuente */
+}
+
+#div-propiedades,
+#div-intercambios,
+#div-reservas,
+#div-valoracion,
+#estado-aceptada,
+#estado-rechazada,
+#estado-pendiente,
+#estado-completada {
+  position: relative;
+  display: flex;
+  background-color: #ffffff;
+  border: 1px solid #ebebeb;
+  border-radius: 8px;
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.08);
+  color: #484848;
+  font-size: 14px;
+  padding: 16px;
+  margin: 16px 0px;
+  padding-bottom: 30px; /* altura del botón */
+}
+
+#texto_reservas {
+  text-align: center !important;
+}
+
+#boton-valorar-intercambio,
+#boton-editar-propiedad,
+#boton-aceptar-reserva,
+#boton-rechazar-reserva,
+#boton-editar-propiedad,
+#boton-eliminar-propiedad,
+#boton-eliminar-valoracion {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  margin-right: 40px;
+}
+
+#boton-eliminar-reserva,
+#boton-eliminar-cuenta {
+  color: #ffffff;
+  position: absolute;
+  right: 0;
+  margin-right: 40px;
+}
+
+#boton-eliminar-reserva:hover,
+#boton-eliminar-cuenta:hover {
+  background-color: #ff0000;
+  color: #ffffff;
+}
+#boton-rechazar-reserva {
+  right: 1%;
+}
+
+#boton-rechazar-reserva:hover {
+  background-color: #ff0000;
+}
+
+#boton-aceptar-reserva {
+  right: 10%;
+}
+
+#boton-aceptar-reserva:hover {
+  background-color: #26962f;
+}
+
+#boton-eliminar-propiedad {
+  right: 1%;
+}
+
+#boton-editar-propiedad {
+  right: 10%;
+}
+
+.descripcion-propiedad {
+  flex-grow: 1;
+  width: 70%; /* Ancho fijo para la descripción */
+  min-height: 1.5em; /* Altura mínima para todas las líneas */
+  font-size: 16px; /* Tamaño de fuente */
+  line-height: 1.5; /* Altura de línea */
+  color: #484848; /* Color de texto */
+  font-weight: 400; /* Grosor de fuente */
+  margin-left: 25px;
+  margin-right: 25px;
+  margin-bottom: 25px;
+}
+#estado {
+  color: #ffffff !important;
+  margin-top: 0%;
+  font-size: small;
+}
+#estado-aceptada,
+#estado-rechazada,
+#estado-pendiente,
+#estado-completada {
+  height: 3% !important;
+  width: 43% !important;
+  margin-top: 30px !important;
+  margin-left: 25% !important;
+  text-align: center !important;
+}
+#estado-aceptada {
+  background-color: #539859 !important;
+}
+#estado-rechazada {
+  background-color: #d33333 !important;
+}
+#estado-pendiente {
+  background-color: #959595 !important;
+}
+#estado-completada {
+  background-color: #31cbdf !important;
+}
+
+#reservas-vertical {
+  display: block !important;
+  width: 20% !important;
+}
+
+#imagenes-mis-reservas {
+  object-fit: cover;
+  width: 100%;
+  height: 50%;
+  margin-right: 16px;
+}
+
+#imagenes-mis-propiedades,
+#imagenes-mis-intercambios,
+#imagenes-nueva-casa {
+  object-fit: cover;
+  width: 20%;
+  height: 20%;
+  margin-right: 16px;
+}
+
+#genero-radio {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#foto-perfil {
+  width: 8%;
+  height: 8%;
+}
+
+#texto-div {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  margin-right: 40px;
+  margin-bottom: 10px;
+  font-size: 18px;
+}
+
+/*MEJOR VALORADAS*/
+.mejor-valoradas {
+  margin-top: 60px;
+  margin-bottom: 60px;
+  text-align: center;
+  overflow: hidden;
+  width: 550px;
+  margin: auto;
+  position: relative; /* Establece el contenedor como posición relativa */
+}
+
+.mejor-valoradas h2 {
+  text-align: center;
+  margin: auto;
+  margin-top: 15px;
+  width: 100%;
+  padding: 10px;
+}
+
+.mejor-valoradas .mejor-casa {
+  float: left;
+  margin-left: 30px;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+  margin: 1em;
+}
+/* .mejor-valoradas .mejor-casa p {
+  margin-left: 1.9em;
+} */
+
+.mejor-valoradas .mejor-casa img {
+  height: 300px;
+  width: 150px;
+  object-fit: cover;
+  border-radius: 50% 20% / 10% 40%;
+}
+
+/* CÓMO FUNCIONA */
+.como-funciona {
+  text-align: center;
+  border: 1px solid #e99517;
+  border-radius: 8px;
+  box-shadow: 0px 0px 16px rgba(0, 0, 0, 0.08);
+  width: 950px;
+  margin: auto;
+  margin-top: 60px;
+}
+
+.como-funciona p {
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.como-funciona h2 {
+  font-weight: bold;
+}
+
+/* MOSTRAR CASA */
+
+#datos-propietario {
+  background-color: #fff;
+  border: 1px solid #ebebeb;
+  border-radius: 8px;
+  box-shadow: 0px 0px 16px rgba(0, 0, 0, 0.08);
+  color: #484848;
+  padding: 16px;
+  margin: 25px;
+  width: 1000px;
+  min-height: 50px;
+  max-height: 330px;
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+
+#foto-perfil-mostrarcasa {
+  object-fit: contain;
+  height: 30%;
+  width: 30%;
+  float: right;
+  margin-bottom: 10px;
+}
+
+/* CUADROS DE TEXTO GRANDES DE LOS FOMRULARIOS (DESCRIPCION) */
+.cuadro-input {
+  box-sizing: border-box;
+  width: 80%;
+  height: 200px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 14px; /* Tamaño de fuente */
+}
+
+/* VALORAR */
+
+#estrellas {
+  width: 50%;
+}
+
+/* CHAT -------*/
+/* PÁGINA CONTACTOS*/
+.wrapperChat {
+  margin: auto;
+  background: #f7f7f7;
+  text-align: center;
+  width: 60%;
+  border-radius: 16px;
+  box-shadow: 0 0 128px 0 rgba(0, 0, 0, 0.1),
+    0 32px 64px -48px rgba(0, 0, 0, 0.5);
+}
+.users {
+  padding: 25px 30px;
+}
+.users header,
+.users-list a {
+  display: flex;
+  align-items: center;
+  padding-bottom: 20px;
+  border-bottom: 1px solid #e6e6e6;
+  justify-content: space-evenly;
+  font-family: "Poppins", sans-serif;
+  font-size: 15px;
+  color: #333;
+}
+.wrapperChat img {
+  object-fit: cover;
+  width: 20%;
+  height: 20%;
+}
+.users header img {
+  object-fit: cover;
+  width: 20%;
+  height: 20%;
+}
+:is(.users, .users-list) .content {
+  display: flex;
+  align-items: center;
+}
+:is(.users, .users-list) .content .details {
+  color: #000;
+  margin-left: 20px;
+}
+:is(.users, .users-list) .details span {
+  font-size: 18px;
+  font-weight: 500;
+}
+.users-list {
+  max-height: 350px;
+  overflow-y: auto;
+}
+:is(.users-list, .chat-box)::-webkit-scrollbar {
+  width: 15px;
+}
+.users-list a {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  padding-bottom: 10px;
+  margin-bottom: 15px;
+  border-bottom-color: #f1f1f1;
+}
+.users-list a:last-child {
+  margin-bottom: 0px;
+  border-bottom: none;
+}
+.users-list a img {
+  object-fit: cover;
+  width: 10%;
+  height: 10%;
+  margin: 1em;
+}
+.users-list a .details p {
+  color: #67676a;
+  margin: 1em;
+}
+.users-list a .details h4 {
+  float: left;
+  color: #67676a;
+  margin: 1em;
+}
+/* Área de texto del chat */
+.chat-area header {
+  display: flex;
+  padding: 25px 30px;
+  margin-right: 10px;
+  font-family: "Poppins", sans-serif;
+  font-size: 15px;
+}
+.chat-area header .back-icon img {
+  float: left;
+  object-fit: cover;
+  width: 45px;
+  height: 45px;
+  margin: 2em;
+}
+.chat-area header .fotoPerfilConversacion img {
+  float: left;
+  object-fit: cover;
+  width: 15%;
+  height: 15%;
+  margin: 1em;
+}
+.chat-area header .details {
+  float: left;
+  text-align: start;
+}
+.chat-box {
+  position: relative;
+  min-height: 450px;
+  max-height: 450px;
+  overflow-y: auto;
+  padding: 10px 30px 20px 30px;
+  background: #ffffff;
+  box-shadow: inset 0 32px 32px -32px rgb(0 0 0 / 5%),
+    inset 0 -32px 32px -32px rgb(0 0 0 / 5%);
+}
+.chat-box .text {
+  position: absolute;
+  top: 45%;
+  left: 50%;
+  width: calc(100% - 50px);
+  text-align: center;
+  transform: translate(-50%, -50%);
+}
+.chat-box .chat {
+  margin: 15px;
+}
+.chat-box .details p {
+  word-wrap: break-word;
+  padding: 8px 16px;
+  box-shadow: 0 0 32px rgb(0 0 0 / 8%), 0rem 16px 16px -16px rgb(0 0 0 / 35%);
+}
+.chat-box .outgoing {
+  display: flex;
+  align-items: flex-end;
+}
+.chat-box .outgoing .fechayhora {
+  margin-left: auto;
+  font-size: 9px; /* tamaño de fuente más pequeño */
+  font-style: italic; /* texto en cursiva */
+  color: #8a8a8a; /* grisáceo */
+}
+.chat-box .outgoing img {
+  height: 6%;
+  width: 6%;
+  margin-left: 0.6em;
+}
+.chat-box .outgoing .details {
+  margin-left: auto;
+  max-width: calc(100% - 300px);
+}
+.outgoing .details p {
+  background: #2079c3;
+  color: #f7fafd;
+  border-radius: 18px 18px 0px 18px;
+}
+.chat-box .incoming {
+  display: flex;
+  align-items: flex-end;
+}
+.chat-box .incoming .fechayhora {
+  margin-right: auto;
+  font-size: 9px; /* tamaño de fuente más pequeño */
+  font-style: italic; /* texto en cursiva */
+  color: #8a8a8a; /* grisáceo */
+}
+.chat-box .incoming img {
+  height: 6%;
+  width: 6%;
+}
+.chat-box .incoming .details {
+  margin-right: auto;
+  margin-left: 10px;
+  max-width: calc(100% - 300px);
+}
+.incoming .details p {
+  background: #dcf2ff;
+  color: #3a4545;
+  border-radius: 18px 18px 18px 0;
+}
+.typing-area {
+  padding: 18px 30px;
+  display: flex;
+  justify-content: space-between;
+  border: none;
+  background-color: #f7f7f7;
+}
+.typing-area input {
+  height: 45px;
+  width: calc(100% - 58px);
+  font-size: 16px;
+  padding: 0 13px;
+  border: 1.5px solid #e6e6e6;
+  outline: none;
+  border-radius: 20px 20px 20px 20px;
+}
+.typing-area button {
+  width: 57px;
+  border: none;
+  outline: none;
+  background: transparent;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+.typing-area button img {
+  object-fit: cover;
+  width: 45px;
+  height: 45px;
+  cursor: pointer;
+}
+.typing-area button.active {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+/* Query chat*/
+@media screen and (max-width: 450px) {
+  .form,
+  .users {
+    padding: 20px;
+  }
+  .form header {
+    text-align: center;
+  }
+  .form form .name-details {
+    flex-direction: column;
+  }
+  .form .name-details .field:first-child {
+    margin-right: 0px;
+  }
+  .form .name-details .field:last-child {
+    margin-left: 0px;
+  }
+
+  .users header img {
+    height: 45px;
+    width: 45px;
+  }
+  .users header .logout {
+    padding: 6px 10px;
+    font-size: 16px;
+  }
+  :is(.users, .users-list) .content .details {
+    margin-left: 15px;
+  }
+
+  .users-list a {
+    padding-right: 10px;
+  }
+
+  .chat-area header {
+    padding: 15px 20px;
+  }
+  .chat-box {
+    min-height: 400px;
+    padding: 10px 15px 15px 20px;
+  }
+  .chat-box .chat p {
+    font-size: 15px;
+  }
+  .chat-box .outogoing .details {
+    max-width: 230px;
+  }
+  .chat-box .incoming .details {
+    max-width: 265px;
+  }
+  .incoming .details img {
+    height: 30px;
+    width: 30px;
+  }
+  .chat-area form {
+    padding: 20px;
+  }
+  .chat-area form input {
+    height: 40px;
+    width: calc(100% - 48px);
+  }
+  .chat-area form button {
+    width: 45px;
+  }
+}
+
+/*SLIDER JAVASCRIPT*/
+
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+.prev:hover,
+.next:hover {
+  background-color: rgba(238, 231, 231, 0.8);
+}
+
+.nombre-casa {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+.punto {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: rgb(165, 161, 161);
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active,
+.punto:hover {
+  background-color: #242323;
+}
+
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {
+    opacity: 0.4;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.slideshow-container img {
+  width: 1000px;
+  height: 500px;
+  border-radius: 15px;
+}
+
+.puntos {
+  text-align: center;
+}
+
+/*Nueva valoración:*/
+.nuevaValoracion {
+  display: flex;
+  justify-content: center;
+}
+
+#submit_star_1:checked + label ~ label,
+#submit_star_1:hover + label ~ label {
+  color: #ccc;
+}
+#submit_star_2:checked + label ~ label,
+#submit_star_2:hover + label ~ label {
+  color: #ccc;
+}
+#submit_star_3:checked + label ~ label,
+#submit_star_3:hover + label ~ label {
+  color: #ccc;
+}
+#submit_star_4:checked + label ~ label,
+#submit_star_4:hover + label ~ label {
+  color: #ccc;
+}
+#submit_star_5:checked + label ~ label,
+#submit_star_5:hover + label ~ label {
+  color: #ccc;
+}
+
+.nuevaValoracion label {
+  display: inline-block;
+  position: relative;
+  margin-right: 5px; /* ajusta el espaciado entre los elementos */
+  font-size: 2rem;
+  color: #fbad04; /* color de las estrellas sin seleccionar */
+  cursor: pointer;
+}
+
+.nuevaValoracion label:before {
+  content: "\f005"; /* código del icono de estrella */
+  font-family: "Font Awesome 5 Free";
+  z-index: 1; /* para que esté encima del input radio */
+}
+
+.nuevaValoracion input {
+  opacity: 0;
+  position: absolute;
+}
+
+/*Valoraciones casas*/
+
+.div-datos {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  margin: auto;
+  margin-bottom: 1.5em;
+  background: #f7f7f7;
+  width: 60%;
+  border-radius: 16px;
+  box-shadow: 0 0 128px 0 rgba(0, 0, 0, 0.1),
+    0 32px 64px -48px rgba(0, 0, 0, 0.5);
+}
+.div-datos .val-imgg {
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.div-datos .val-imgg img {
+  margin: auto;
+  object-fit: cover;
+}
+.div-datos h2 {
+  margin: 0.2em;
+  font-size: 1.5rem;
+}
+
+.div-datos .div-datos-estrellas i {
+  margin: 0.2em;
+  font-size: 1.5rem;
+}
+.div-datos h3 {
+  margin: 2em;
+  font-size: 1.2rem;
+  padding-bottom: 1em;
+}
+
+/*Parte de arriba valoraciones*/
+.container-grande-valoraciones {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  margin-bottom: 1.5em;
+  width: 90%;
+  background: #f7f7f7;
+  border-radius: 16px;
+  box-shadow: 0 0 128px 0 rgba(0, 0, 0, 0.1),
+    0 32px 64px -48px rgba(0, 0, 0, 0.5);
+}
+.container-grande-valoraciones .card {
+  margin: auto;
+}
+.container-grande-valoraciones .col-sm-4 {
+  margin: auto;
+  padding-bottom: 2em;
+}
+.container-grande-valoraciones .col-sm-4 div {
+  margin-left: 5em;
+  margin-right: 5em;
+  background: #f7f7f7;
+}
+
+.progress-label-left {
+  float: left;
+  margin-right: 0.5em;
+  line-height: 1em;
+}
+.progress-label-right {
+  float: right;
+  margin-left: 0.3em;
+  line-height: 1em;
+}
+
+.star-light {
+  color: #e9ecef;
+}
+
+.progress {
+  height: 35px;
+  width: 100%;
+  border-radius: 5px;
+  background-color: #ffffff;
+  margin-bottom: 15px;
+}
+
+.progress-bar-bg-warning {
+  height: 10px;
+  border-radius: 10px;
+  overflow: hidden;
+  width: 90%;
+}
+
+.progress-bar-bg-warning::-webkit-progress-bar {
+  background-color: #bababa;
+}
+
+.progress-bar-bg-warning::-webkit-progress-value {
+  background-color: #ffc107;
+  border-radius: 10px;
+}
+
+.progress {
+  text-align: center;
+}
+
+.progress-label-left,
+.progress-label-right {
+  color: #000000;
+  font-weight: bold;
+  font-size: 1.2em;
+
+  margin: 8px;
+}
+
+/* PANEL ADMIN */
+.adminPanelContainer {
+  display: flex;
+  justify-content: space-evenly;
+  font-family: consolas;
+  align-items: flex-start;
+  margin: auto;
+  text-align: center;
+  width: 60%;
+}
+
+.adminPanelContainer .card {
+  position: relative;
+  cursor: pointer;
+  margin: 1em;
+}
+
+.adminPanelContainer .card .face {
+  width: 300px;
+  height: 200px;
+  transition: 0.5s;
+  border-radius: 16px;
+}
+
+.adminPanelContainer .card .face.face1 {
+  position: relative;
+  background: #333333;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1;
+  transform: translateY(100px);
+}
+
+.adminPanelContainer .card:hover .face.face1 {
+  background: #ffc484;
+  transform: translateY(0);
+  border-radius: 16px;
+}
+
+.adminPanelContainer .card .face.face1 .content {
+  opacity: 0.2;
+  transition: 0.5s;
+}
+
+.adminPanelContainer .card:hover .face.face1 .content {
+  opacity: 1;
+}
+
+.adminPanelContainer .card .face.face1 .content img {
+  max-width: 100px;
+  filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(343deg)
+    brightness(107%) contrast(102%);
+}
+
+.adminPanelContainer .card .face.face1 .content h3 {
+  margin: 10px 0 0;
+  padding: 0;
+  color: #fff;
+  text-align: center;
+  font-size: 1.5em;
+}
+
+.adminPanelContainer .card .face.face2 {
+  position: relative;
+  background: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  box-sizing: border-box;
+  box-shadow: 0 20px 50px rgba(58, 58, 58, 0.4);
+  transform: translateY(-100px);
+}
+
+.adminPanelContainer .card:hover .face.face2 {
+  transform: translateY(0);
+}
+
+.adminPanelContainer .card .face.face2 .content p {
+  margin: 0;
+  padding: 0;
+}
+
+.adminPanelContainer .card .face.face2 .content a {
+  margin: 15px 0 0;
+  display: inline-block;
+  text-decoration: none;
+  font-weight: 900;
+  color: #ffc484;
+  padding: 5px;
+  border: 1px solid #ffc484;
+  border-radius: 10px;
+}
+
+.adminPanelContainer .card .face.face2 .content a:hover {
+  background: #f8a647;
+  color: whitesmoke;
+  border: 0px;
+}
+
+.volverLink {
+  display: flex;
+  justify-content: center;
+  margin-top: 1px;
+}
+.volverLink button {
+  background-color: #f8a647;
+  font-family: consolas;
+  font-weight: bold;
+  border-radius: 12px;
+}
+.bienvenidoAdmin h1 {
+  font-size: 30px;
+  display: flex;
+  justify-content: center;
+  margin-top: 40px;
+  font-family: consolas;
+  font-weight: bold;
+  color: #f8a647;
+}
+
+/*Botón admin del index*/
+.botonAdminIndex {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+  margin: auto;
+}
+.botonAdminIndex button {
+  background-color: #f8a647;
+  font-family: consolas;
+  font-weight: bold;
+  border-radius: 20px;
+  margin-top: 20px;
+  margin-bottom: 45px;
+  margin-left: 20px;
+  margin-right: 20px;
+  padding: 10px;
+  font-size: 24px;
+  transition: all 0.4s ease;
+}
+.botonAdminIndex button:hover {
+  transform: scale(1.2);
+  box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.7);
+  border-radius: 30px;
+}
+
+/*#gestionar-div {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.adminButton {
+  padding: 20px;
+  font-size: 20px;
+  margin: 10px;
+}
+
+.volverLink {
+  display: flex;
+  justify-content: center;
+  margin-top: 30px;
+}
+
+.volverButton {
+  padding: 10px;
+  font-size: 16px;
+  background-color: #e6a055;
+}
+
+@media (max-width: 768px) {
+  .adminButton {
+    padding: 10px;
+    font-size: 16px;
+  }
+}
+*/
