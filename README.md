@@ -7,4 +7,4 @@ Este proyecto realizado para la asignatura de **Arquitectura y Ampliación Web**
 - **CSS**: Para el diseño y la estructura visual del sitio web.
 - **JavaScript**: Para las funcionalidades interactivas y la gestión de eventos del frontend.
 
-#![Logo del proyecto](/logo.png)
+#![Logo del proyecto](/resources/hauswap.png)
